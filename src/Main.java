@@ -6,26 +6,34 @@ public class Main {
         // ===== CHECKING CLASS Arithmetic =====
         System.out.println("=== Class Arithmetic ===");
 
-        int num1 = 50;
-        double num2 = 0.5;
+        int num1 = 10;
+        double num2 = 3.0;
         Arithmetic<Integer, Double> am = new Arithmetic<>(num1, num2);
-        System.out.println(num1 + " + " + num2 + " = " + am.add());
-        System.out.println(num1 + " - " + num2 + " = " + am.subtract());
-        System.out.println(num1 + " × " + num2 + " = " + am.multiply());
-        System.out.println(num1 + " ÷ " + num2 + " = " + am.divide());
-        System.out.println("Minimum: " + am.getMin());
-        System.out.println("Maximum: " + am.getMax());
+        am.printOperations();
+
+        num1 = 50;
+        num2 = 0.5;
+        am = new Arithmetic<>(num1, num2);
+        am.printOperations();
 
         //=== OUTPUT ===
+        //NUMBERS [10] and [3.0]
+        //10 + 3.0 = 13
+        //10 - 3.0 = 7
+        //10 × 3.0 = 30
+        //10 ÷ 3.0 = 3.33
+        //Minimum: 3.0
+        //Maximum: 10
+        //NUMBERS [50] and [0.5]
         //50 + 0.5 = 50.5
         //50 - 0.5 = 49.5
-        //50 × 0.5 = 25.0
-        //50 ÷ 0.5 = 100.0
+        //50 × 0.5 = 25
+        //50 ÷ 0.5 = 100
         //Minimum: 0.5
         //Maximum: 50
 
         // ===== CHECKING CLASS MyMap =====
-        System.out.println("\n=== Class MyMap ===");
+        System.out.println("=== Class MyMap ===");
 
         String str1 = "hello", str2 = "world";
         int n1 = 3, n2 = 7;
