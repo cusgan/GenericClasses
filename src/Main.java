@@ -4,11 +4,25 @@ import MyMap.MyMap;
 public class Main {
     public static void main(String[] args) {
         // ===== CHECKING CLASS Arithmetic =====
-        System.out.println("\n=== Class Arithmetic ===");
+        System.out.println("=== Class Arithmetic ===");
 
-        Arithmetic<Integer, Double> ari = new Arithmetic<>(15,3.5);
-        System.out.println(ari.add());
+        int num1 = 50;
+        double num2 = 0.5;
+        Arithmetic<Integer, Double> am = new Arithmetic<>(num1, num2);
+        System.out.println(num1 + " + " + num2 + " = " + am.add());
+        System.out.println(num1 + " - " + num2 + " = " + am.subtract());
+        System.out.println(num1 + " × " + num2 + " = " + am.multiply());
+        System.out.println(num1 + " ÷ " + num2 + " = " + am.divide());
+        System.out.println("Minimum: " + am.getMin());
+        System.out.println("Maximum: " + am.getMax());
 
+        //=== OUTPUT ===
+        //50 + 0.5 = 50.5
+        //50 - 0.5 = 49.5
+        //50 × 0.5 = 25.0
+        //50 ÷ 0.5 = 100.0
+        //Minimum: 0.5
+        //Maximum: 50
 
         // ===== CHECKING CLASS MyMap =====
         System.out.println("\n=== Class MyMap ===");
