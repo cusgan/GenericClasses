@@ -10,29 +10,29 @@ public class Arithmetic<S extends Number, T extends Number> {
     }
 
     public Number add() {
-        return Double.parseDouble(num1.toString()) + Double.parseDouble(num2.toString());
+        return num1.doubleValue() + num2.doubleValue();
     }
 
     public Number subtract() {
-        return Double.parseDouble(num1.toString()) - Double.parseDouble(num2.toString());
+        return num1.doubleValue() - num2.doubleValue();
     }
 
     public Number multiply() {
-        return Double.parseDouble(num1.toString()) * Double.parseDouble(num2.toString());
+        return num1.doubleValue() * num2.doubleValue();
     }
 
     public Number divide() {
-        return Double.parseDouble(num1.toString()) / Double.parseDouble(num2.toString());
+        return num1.doubleValue() / num2.doubleValue();
     }
 
     public Number getMin() {
-        if (Double.parseDouble(num1.toString()) < Double.parseDouble(num2.toString()))
+        if (num1.doubleValue() < num2.doubleValue())
             return num1;
         return num2;
     }
 
     public Number getMax() {
-        if (Double.parseDouble(num1.toString()) > Double.parseDouble(num2.toString()))
+        if (num1.doubleValue() > num2.doubleValue())
             return num1;
         return num2;
     }
